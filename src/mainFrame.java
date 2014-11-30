@@ -1690,7 +1690,7 @@ public class mainFrame extends javax.swing.JFrame {
         /*
          edit sinh vien o day
          */
-    	String mssv,khoa,name,lop,ngaysinh,que,maph;
+    	String mssv,khoa,name,lop,ngaysinh,que,maph,mssvc;
     	mssv=editsv_mssvtf.getText();
     	name=editsv_nametf.getText();
     	khoa=editsv_khoatf.getText();
@@ -1698,9 +1698,10 @@ public class mainFrame extends javax.swing.JFrame {
     	que=editsv_quetf.getText();
     	maph=editsv_phongtf.getText();
     	lop=editsv_loptf.getText();
+    	mssvc = editsv_mssv_seachtf.getText();
     	int gioitinh=editsv_giotinh.getSelectedIndex();
     	int doituong=editsv_doituongcb.getSelectedIndex();
-    	new editsv(name, lop, mssv, que, ngaysinh, doituong, khoa, gioitinh, maph);
+    	new editsv(mssvc,name, lop, mssv, que, ngaysinh, doituong, khoa, gioitinh, maph);
     	
     }                                           
 
