@@ -1793,7 +1793,7 @@ public class mainFrame extends javax.swing.JFrame {
     	String phong=newsv_phongtf.getText();
     	String maph=khu+"-"+phong;
     	String lop = newsv_loptf.getText();
-    	int dt=newsv_khuselect.getSelectedIndex();
+    	int dt=newsv_doituong.getSelectedIndex();
     	int gt=newsv_loaiphongselect.getSelectedIndex();
     	new addsv(name, lop, mssv, que, ngaysinh, dt, khoa, gt, maph);
     }                                                                                 
