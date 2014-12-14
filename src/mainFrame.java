@@ -1740,6 +1740,25 @@ public class mainFrame extends javax.swing.JFrame {
         /*
          tracuu sinh vien viet o day
          */
+         String mssvseach=tracuusv_seachbox.getText();
+    	Connection c=new getconnect().getcon();
+    	Statement stmt;
+    	try {
+			stmt=c.createStatement();
+			ResultSet rs = stmt.executeQuery( "SELECT * FROM sinhvien where mssv='"+mssvseach+"';" );
+			rs.next();
+			tracusv_mssv.setText(rs.getString("mssv"));
+			tracuusv_khoa.setText(rs.getString("khoa"));
+			tracuusv_name.setText(rs.getString("ten"));
+			tracuusv_ngaysinh.setText(rs.getString("ngaysinh"));
+			tracuusv_maphong.setText(rs.getString("maph"));
+			tracuusv_quequan.setText(rs.getString("que"));//note!!!
+			tracuusv_doitong.setText(rs.getString("doituong"));
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }                                                
 
     private void newphong_cancelbtActionPerformed(java.awt.event.ActionEvent evt) {                                                  
