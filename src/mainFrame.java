@@ -1609,6 +1609,14 @@ public class mainFrame extends javax.swing.JFrame {
         /*
          ///////////////sua thong tin phong o day
          */
+         String maph_cu,maph_moi,loaicu,loaiphmoi;
+        int khu;
+        khu=editphong_khu.getSelectedIndex();
+        maph_cu=editphong_phongcu.getText();
+        maph_moi=editphong_phongmoi.getText();
+        loaicu=editphong_loaicu.getText();
+        loaiphmoi=editphong_loaiphmoi.getText();
+        new editphong(khu,maph_cu,maph_moi,loaicu,loaiphmoi);
     }                                               
 
     private void editphong_cancelbtActionPerformed(java.awt.event.ActionEvent evt) {                                                   
